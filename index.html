@@ -1,14 +1,185 @@
-Search artists, playlists or tracks
-Dany Schudler
-Edit Profile
-Overview
-News
-Playlists
-Discover
-Dashboard
-Messages
-Notifications
-Account
-Featured Playlists
-Profile Views
-Tracks
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/99fae8817d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <title>Music Library</title>
+</head>
+<body>
+    <header id="toggleMenu" class="active">
+        <section class="profile">
+            <img src="assets/profile.jpg" alt="profile image">
+           <div>
+            <p id="profile-name">Dany<br>Schudler</p>
+            <div class="edit">
+                <p id="edit">Edit Profile</p>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+           </div>
+        </section>
+        <div class="container">
+            <section class="list">
+                <div class="divider"></div> 
+                <div class="ip">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>Overview</p>
+                </div>
+                <div class="ip">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <p>News</p>
+                </div>
+                <div class="ip">
+                    <i class="fa-solid fa-music"></i>
+                    <p>Playlists</p>
+                </div>
+                <div class="ip">
+                    <i class="fa-solid fa-signal"></i>
+                    <p>Discover</p>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="list">
+                <div class="divider"></div>
+                <div class="ip">
+                    <i class="fa-solid fa-gauge"></i>
+                    <p>Dashboard</p>
+                </div>
+                <div class="ip">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Messages</p>
+                </div>
+                <div class="ip">
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Notifications</p>
+                </div>
+                <div class="ip">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Account</p>
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="menu" onclick="showMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <main>
+        <section id="input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search" placeholder="Search artists, playlists or tracks">
+        </section>
+        <p class="playlists">Featured Playlists</p>
+        <div class="owl-carousel owl-theme">
+            <div class="playlist">
+                <img src="assets/playlist1.jpg" alt="playlist 1">
+                <p class="p">Only STARDUST</p>
+                <p class="track">24 tracks</p>
+            </div>
+            <div class="playlist">
+                <img src="assets/playlist2.jpg" alt="playlist 2">
+                <p class="p">Mike Vella</p>
+                <p class="track">12 tracks</p>
+            </div>
+            <div class="playlist">
+                <img src="assets/playlist3.jpg" alt="playlist 3">
+                <p class="p">the best singles s2</p>
+                <p class="track">163 tracks</p>
+            </div>
+            <div class="playlist">
+                <img src="assets/playlist4.jpg" alt="playlist 4">
+                <p class="p">Indie</p>
+                <p class="track">138 tracks</p>
+            </div>
+        </div>
+        <section id="container">
+            <section id="profileViews">
+                <div id="p">
+                    <p class="p">Profile Views</p>
+                </div>
+                <div class="viewers">
+                    <img src="assets/view1.jpg" alt="viewer 1">
+                    <div>
+                        <p class="viewer">Jenny Villa</p>
+                        <p class="daysAgo">1 day ago</p>
+                    </div>
+                    <div class="album">
+                        <p class="albums">4 albums</p>
+                    </div>
+                </div>
+                <div class="viewers">
+                    <img src="assets/view2.jpg" alt="viewer 2">
+                    <div>
+                        <p class="viewer">Aquila Rut</p>
+                        <p class="daysAgo">3 day ago</p>
+                    </div>
+                    <div class="album">
+                        <p class="albums">2 albums</p>
+                    </div>
+                </div>
+                <div class="viewers">
+                    <img src="assets/view3.jpg" alt="viewer 3">
+                    <div>
+                        <p class="viewer">This is War</p>
+                        <p class="daysAgo">2 weeks ago</p>
+                    </div>
+                    <div class="album">
+                        <p class="albums">5 albums</p>
+                    </div>
+                </div>
+            </section>
+            <section id="tracks">
+                <p class="p">Tracks</p>
+                <div class="owl-carousel owl-theme">
+                    <div class="tracks">
+                        <img src="assets/track1.jpg" alt="track 1">
+                        <p class="artist">Mahara Bon</p>
+                        <p class="music">Sexy in Paris</p>
+                    </div>
+                    <div class="tracks">
+                        <img src="assets/track2.jpg" alt="track 2">
+                        <p class="artist">Donna</p>
+                        <p class="music">Pseudo-Life</p>
+                    </div>
+                    <div class="tracks">
+                        <img src="assets/track3.jpg" alt="track 3">
+                        <p class="artist">Avven</p>
+                        <p class="music">Magic</p>
+                    </div>
+                    <div class="tracks">
+                        <img src="assets/track4.jpg" alt="track 4">
+                        <p class="artist">Cony Matt</p>
+                        <p class="music">Living in Hell</p>
+                    </div>
+                    <div class="tracks">
+                        <img src="assets/track5.jpg" alt="track 5">
+                        <p class="artist">Claudia Cany</p>
+                        <p class="music">Remember</p>
+                    </div>
+                    <div class="tracks">
+                        <img src="assets/track6.jpg" alt="track 6">
+                        <p class="artist">Samm</p>
+                        <p class="music">Same-Huly</p>
+                    </div>
+                    <div class="tracks">
+                        <img src="assets/track7.jpg" alt="track 7">
+                        <p class="artist">Pacify</p>
+                        <p class="music">Portrall</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

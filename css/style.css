@@ -1,0 +1,205 @@
+:root {
+    --preto: #040517;
+    --azul: rgb(32, 15, 86);
+    --branco: #e5e5e5e7;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background: #1e1733;
+    color: var(--branco);
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    height: 100vh;
+    width: 300px;
+    background: var(--preto);
+    color: var(--branco);
+}
+.menu {
+    overflow: hidden;
+}
+.profile {
+    display: flex;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+.profile i {
+    cursor: pointer;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+#profile-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+.edit {
+    display: flex;
+}
+#edit {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+}
+#edit:hover {
+    color: #fff;
+}
+.divider {
+    text-align: center;
+    border-bottom: 1px solid var(--branco);
+    width: 125px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.list {
+    display: block;
+    width: 150px;
+    font-weight: 100;
+}
+.list i {
+    color: var(--branco);
+}
+.ip {
+    width: 150px;
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: start;
+}
+.ip i {
+    margin-right: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container p {
+    cursor: pointer;
+}
+.container p:hover {
+    color: #fff;
+}
+main {
+    color: var(--branco);
+    padding-left: 60px;
+}
+#input {
+    margin-top: 20px;
+    color: var(--branco);
+}
+#search {
+    background: #1e1733;
+    border: none;
+    width: 300px;
+}
+.playlists {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 60px;
+}
+.p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.track {
+    font-size: 12px;
+    font-weight: 100;
+}
+.owl-carousel {
+    padding-top: 20px;
+}
+.playlist img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+#container {
+    display: flex;
+}
+#profileViews {
+    width: 700px;
+}
+#p {
+    margin-bottom: 20px;
+}
+.viewers {
+    display: flex;
+    margin-bottom: 15px;
+}
+.viewers img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.viewer {
+    font-weight: 300;
+    font-size: 18px;
+}
+.daysAgo {
+    font-weight: 100;
+    font-size: 10px;
+}
+.album {
+    width: 150px;
+    text-align: end;
+}
+.albums {
+    font-weight: 100;
+    font-size: 10px;
+}
+.tracks {
+    width: 150px;
+}
+.tracks img {
+    height: 150px;
+    border-radius: 5px;
+}
+.artist {
+    font-weight: 300;
+    font-size: 15px;
+}
+.music {
+    font-weight: 100;
+    font-size: 12px;
+}
+@media (max-width: 1024px) {
+    #profileViews {
+        width: 300px;
+        margin-right: 50px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    header {
+        height: 155vh;
+    }
+    .active {
+        overflow: hidden;
+    }
+    .menu {
+        overflow: visible;
+        font-size: 25px;
+    }
+    #container {
+        display: block;
+    }
+}
