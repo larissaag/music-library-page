@@ -1,5 +1,5 @@
-let toggleMenu = document.getElementById('toggleMenu');
-let menu = document.querySelector('menu');
+let menu = document.getElementById('menu');
+let toggleMenu = document.querySelector('toggleMenu');
 function showMenu () {
-        toggleMenu.classList.toggle('active');
+        menu.classList.toggle('active');
 }

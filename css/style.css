@@ -8,10 +8,12 @@
     margin: 0;
     padding: 0;
 }
+html {
+    overflow: hidden;
+}
 body {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
     background: #1e1733;
     color: var(--branco);
     width: 100vw;
@@ -19,12 +21,13 @@ body {
 }
 header {
     height: 100vh;
+    bottom: 0;
     width: 300px;
     background: var(--preto);
     color: var(--branco);
 }
-.menu {
-    overflow: hidden;
+.toggleMenu {
+    display: none;
 }
 .profile {
     display: flex;
@@ -124,8 +127,7 @@ main {
     padding-top: 20px;
 }
 .playlist img {
-    width: 300px;
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
 }
 #container {
@@ -183,23 +185,36 @@ main {
         width: 300px;
         margin-right: 50px;
     }
+    .playlist img {
+        height: 250px;
+    }
 }
 @media (max-width: 768px) {
     body {
-        overflow: auto;
         overflow-x: hidden;
     }
     header {
-        height: 155vh;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        bottom: 0;
+        left: -300px;
+        color: white;
+        transition: left 0.5s;
     }
     .active {
-        overflow: hidden;
+        left: 0;
     }
-    .menu {
-        overflow: visible;
+    .toggleMenu {
+        display: block;
         font-size: 25px;
+        position: absolute;
+        right: -30px;
     }
     #container {
         display: block;
+    }
+    #profileViews {
+        width: 270px;
     }
 }
